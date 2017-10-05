@@ -50,11 +50,11 @@ public class Activity1 extends AppCompatActivity implements View.OnClickListener
                 int numero=Integer.parseInt(data.getDataString());
                 if (numero<18)
                     textEdad.setText("Tienes "+data.getDataString()+ " años, aun eres menor de edad");
-                if (numero>18 && numero<25)
+                if (numero>=18 && numero<25)
                 textEdad.setText("Tienes "+data.getDataString()+ " años, ya eres mayor de edad");
-                if (numero>25 && numero<35)
+                if (numero>=25 && numero<35)
                     textEdad.setText("Tienes "+data.getDataString()+ " años, estás en la flor de la vida");
-                if (numero>35)
+                if (numero>=35)
                     textEdad.setText("Tienes "+data.getDataString()+ " años, ay ay ay");
 
             }else {Toast.makeText(this,"Error", Toast.LENGTH_LONG).show();}}
