@@ -28,6 +28,8 @@ public class Activity1 extends AppCompatActivity implements View.OnClickListener
         boton_info = (Button) findViewById(R.id.boton_info);
         et_nombre = (EditText) findViewById(R.id.editText_nombre);
         textEdad = (TextView) findViewById(R.id.textEdad);
+        radioButtonHombre = (RadioButton) findViewById(R.id.radioButtonHombre);
+        radioButtonMujer = (RadioButton) findViewById(R.id.radioButtonMujer);
 
 
         boton_info.setOnClickListener(this);
@@ -40,6 +42,9 @@ public class Activity1 extends AppCompatActivity implements View.OnClickListener
            Intent i = new Intent(this,Activity2.class);
             String ediNombre=et_nombre.getText().toString();
             i.putExtra("nombre",ediNombre);
+            et_nombre.setEnabled(false);
+            radioButtonMujer.setEnabled(false);
+            radioButtonHombre.setEnabled(false);
 
             startActivityForResult(i, ActivityEdad);
         }
