@@ -17,6 +17,8 @@ public class Activity1 extends AppCompatActivity implements View.OnClickListener
     private Button boton_info;
     TextView textEdad;
     int ActivityEdad = 1;
+    private RadioButton radioButtonHombre;
+    private RadioButton radioButtonMujer;
 
 
 
